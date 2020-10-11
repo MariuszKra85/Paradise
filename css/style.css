@@ -49,6 +49,11 @@ iframe {
   display: flex;
 }
 
+.negative-margin {
+  margin: 0 -30px;
+  width: calc(100% + 60px);
+}
+
 /* 1. PAGE BAR */
 
 .page-bar .flex-container {
@@ -222,7 +227,17 @@ iframe {
 .heading-2 {
   font-size: 1.5rem;
 }
+.heading-light {
+  font-weight: 400;
+}
 /* 5. TEXT COLORS */
+.text {
+  max-width: 810px;
+  color: #9b94aa;
+  font-size: 0.9375rem;
+  font-weight: 300;
+  line-height: 20px;
+}
 .text-blue {
   color: #3067cd;
 }
@@ -232,7 +247,6 @@ iframe {
 .free-catalog {
   margin: 0 20px;
 }
-
 
 /* 6. ICONS */
 
@@ -268,41 +282,82 @@ iframe {
   background-image: url(../img/icon/icon-g+-white.svg);
 }
 
+/*8. ABOUT US*/
 
-@media screen and (min-width:700px){
-  .bars{
-      display: none;
+.about-us {
+  width: 75%;
+  padding-left: 80px;
+}
+
+.persons-wrapper {
+  margin-top: 40px;
+}
+
+.person {
+  margin: 0 10px;
+  max-width: 260px;
+  width: 30%;
+}
+
+/* 8.1 beginning  */
+
+.quote-wrapper {
+  margin-top: 65px;
+  padding: 50px 20px 70px;
+  max-width: 873px;
+  text-align: center;
+  background-color: #1e1929;
+}
+.quote-wrapper .text {
+  max-width: 600px;
+}
+
+.quote {
+  padding-right: 5%;
+  border-right: solid 1px #413f44;
+  margin-right: 10px;
+  margin-bottom: 25px;
+}
+
+.fa-quote-right {
+  font-size: 3.4rem;
+  color: white;
+}
+
+@media screen and (min-width: 700px) {
+  .bars {
+    display: none;
   }
-  .navbar-nav{
-      display: flex;
-      position: initial;
+  .navbar-nav {
+    display: flex;
+    position: initial;
   }
-  .nav-item>a {
-      white-space: nowrap;
-      min-width: initial;
-      padding: 24px 30px;
+  .nav-item > a {
+    white-space: nowrap;
+    min-width: initial;
+    padding: 24px 30px;
   }
-  .nav-item:first-child >a {
-      padding-left: 37px;
+  .nav-item:first-child > a {
+    padding-left: 37px;
   }
-  .nav-item:last-child >a{
-      padding-right: 37px;
-      padding-left: 25px;
+  .nav-item:last-child > a {
+    padding-right: 37px;
+    padding-left: 25px;
   }
-  .dropdown-toggler a{
-      background-position: right center;
+  .dropdown-toggler a {
+    background-position: right center;
   }
-  .dropdown-menu{
-      position: absolute;
-      top:100%;
-      left:0;
-      
+  .dropdown-menu {
+    position: absolute;
+    top: 100%;
+    left: 0;
   }
-  .dropdown-menu a:first-child{
-      padding-top: 20px;
-      padding-bottom: 10px;
+  .dropdown-menu a:first-child {
+    padding-top: 20px;
+    padding-bottom: 10px;
   }
-  .dropdown-menu a:last-child{
-      padding-top: 10px;
-      padding-bottom: 20px;
+  .dropdown-menu a:last-child {
+    padding-top: 10px;
+    padding-bottom: 20px;
   }
+}
