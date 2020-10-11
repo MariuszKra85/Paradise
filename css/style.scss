@@ -1,34 +1,27 @@
 html {
   scroll-behavior: smooth;
 }
-
 * {
   margin: 0;
   padding: 0;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
-
 a {
   text-decoration: none;
   cursor: pointer;
 }
-
 table {
   border-collapse: collapse;
 }
-
 body {
   font-family: 'Montserrat', sans-serif;
   background: #120e1c;
 }
-
 input,
 textarea,
 button {
   outline: none;
 }
-
 select {
   -webkit-appearance: none;
   -moz-appearance: none;
@@ -37,7 +30,6 @@ select {
   background-size: 5px;
   outline: none;
 }
-
 select::-ms-expand {
   display: none;
 }
@@ -53,10 +45,7 @@ iframe {
   padding: 0 30px;
   margin: 0 auto;
 }
-
 .flex-container {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
 }
 
@@ -66,18 +55,13 @@ iframe {
 }
 
 /* 1. PAGE BAR */
+
 .page-bar .flex-container {
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .page-bar {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   height: 80px;
   background-color: #070312;
@@ -91,18 +75,18 @@ iframe {
 
 /* 2. PAGE HERO */
 .page-hero .flex-container {
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: space-between;
+  align-items: center;
 }
-
 .page-hero {
   padding: 30px 0;
-  background-image: -webkit-gradient(linear, left bottom, left top, color-stop(64%, #120e1c), color-stop(70%, #100c1a), to(rgba(7, 3, 18, 0))), url(../img/header-bg.png);
-  background-image: linear-gradient(to top, #120e1c 64%, #100c1a 70%, rgba(7, 3, 18, 0) 100%), url(../img/header-bg.png);
+  background-image: linear-gradient(
+      to top,
+      #120e1c 64%,
+      #100c1a 70%,
+      rgba(7, 3, 18, 0) 100%
+    ),
+    url(../img/header-bg.png);
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -117,7 +101,6 @@ iframe {
   font-size: 4.3rem;
   line-height: 1;
 }
-
 .hero-subtitle {
   margin-top: 45px;
   color: #ffffff;
@@ -134,6 +117,7 @@ iframe {
 }
 
 /* 3.  NAV  */
+
 .page-nav {
   position: relative;
 }
@@ -145,19 +129,16 @@ iframe {
   position: relative;
   border-radius: 5px;
 }
-
 .bars-line {
   width: 30px;
   height: 4px;
   position: absolute;
   top: 50%;
   left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
   background-color: #fff;
   border-radius: 4px;
 }
-
 .bars-line::after,
 .bars-line::before {
   content: '';
@@ -166,19 +147,16 @@ iframe {
   height: 100%;
   border-radius: 4px;
 }
-
 .bars-line::before {
   width: 100%;
   background-color: #fff;
   top: -10px;
 }
-
 .bars-line::after {
   width: 66%;
   background-color: #3067cd;
   bottom: -10px;
 }
-
 .navbar-nav {
   display: none;
   position: absolute;
@@ -187,57 +165,46 @@ iframe {
   list-style: none;
   background-color: #3067cd;
 }
-
 .active {
   display: block;
 }
-
 .nav-item a {
   display: block;
   font-size: 0.75rem;
   font-weight: 700;
   text-transform: uppercase;
 }
-
 .nav-item > a {
   color: #ffffff;
   padding: 20px 30px 15px;
   min-width: 180px;
 }
-
 .nav-item:first-child > a {
   padding-top: 25px;
 }
-
 .nav-item:last-child a {
   padding-bottom: 25px;
 }
-
 .dropdown-toggler {
   position: relative;
 }
-
 .dropdown-toggler a {
   background-image: url(../img/Szczalka.png);
   background-position: right 25px center;
   background-repeat: no-repeat;
   background-size: 5px;
 }
-
 .dropdown-toggler:hover .dropdown-menu {
   display: block;
 }
-
 .dropdown-menu {
   background-color: #fff;
   display: none;
 }
-
 .dropdown-menu > a {
   padding: 25px 30px 15px;
   color: #1e1929;
 }
-
 .dropdown-menu > a:last-child {
   padding: 15px 30px 30px;
 }
@@ -245,8 +212,8 @@ iframe {
 .bar-contact a {
   margin: 0 10px;
 }
-
 /* 4. HEADINGS */
+
 .heading {
   color: #ffffff;
   font-family: Oswald;
@@ -254,19 +221,15 @@ iframe {
   line-height: 90px;
   text-transform: uppercase;
 }
-
 .heading-1 {
   font-size: 2.25rem;
 }
-
 .heading-2 {
   font-size: 1.5rem;
 }
-
 .heading-light {
   font-weight: 400;
 }
-
 /* 5. TEXT COLORS */
 .text {
   max-width: 810px;
@@ -275,60 +238,52 @@ iframe {
   font-weight: 300;
   line-height: 20px;
 }
-
 .text-blue {
   color: #3067cd;
 }
-
 .text-white {
   color: #fff;
 }
-
 .free-catalog {
   margin: 0 20px;
 }
 
 /* 6. ICONS */
+
 .icon {
   background-repeat: no-repeat;
   background-size: contain;
   background-position: left center;
 }
-
 .icon-phone-violet {
   background-image: url(../img/icon/icon-phone-violet.png);
   padding-left: 20px;
 }
-
 .icon-mail-violet {
   background-image: url(../img/icon/icon-mail-violet.png);
   padding-left: 30px;
 }
-
 .social-icon {
   display: inline-block;
   width: 15px;
   height: 15px;
   text-indent: -99999px;
 }
-
 .icon-fb-white {
   background-image: url(../img/icon/icon-fb-white.svg);
 }
-
 .icon-twitter-white {
   background-image: url(../img/icon/icon-twitter-white.svg);
 }
-
 .icon-in-white {
   background-image: url(../img/icon/icon-in-white.svg);
 }
-
 .icon-google-white {
   background-image: url(../img/icon/icon-g+-white.svg);
 }
 
 /*8. ABOUT US*/
+
 .about-us {
   width: 75%;
   padding-left: 80px;
@@ -345,6 +300,7 @@ iframe {
 }
 
 /* 8.1 beginning  */
+
 .quote-wrapper {
   margin-top: 65px;
   padding: 50px 20px 70px;
@@ -352,7 +308,6 @@ iframe {
   text-align: center;
   background-color: #1e1929;
 }
-
 .quote-wrapper .text {
   max-width: 600px;
 }
@@ -374,8 +329,6 @@ iframe {
     display: none;
   }
   .navbar-nav {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
     position: initial;
   }
@@ -408,4 +361,3 @@ iframe {
     padding-bottom: 20px;
   }
 }
-/*# sourceMappingURL=style.css.map */
