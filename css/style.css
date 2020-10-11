@@ -1,0 +1,308 @@
+html {
+  scroll-behavior: smooth;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+a {
+  text-decoration: none;
+  cursor: pointer;
+}
+table {
+  border-collapse: collapse;
+}
+body {
+  font-family: 'Montserrat', sans-serif;
+  background: #120e1c;
+}
+input,
+textarea,
+button {
+  outline: none;
+}
+select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background: url(../img/Szczalka.png) right 20px center no-repeat;
+  background-size: 5px;
+  outline: none;
+}
+select::-ms-expand {
+  display: none;
+}
+
+iframe {
+  border: none;
+  outline: none;
+}
+
+.center-wrapper {
+  width: 100vw;
+  max-width: 1360px;
+  padding: 0 30px;
+  margin: 0 auto;
+}
+.flex-container {
+  display: flex;
+}
+
+/* 1. PAGE BAR */
+
+.page-bar .flex-container {
+  justify-content: space-between;
+  align-items: center;
+}
+
+.page-bar {
+  display: flex;
+  height: 80px;
+  background-color: #070312;
+  color: #fff;
+  font-family: 'Oswald', sans-serif;
+  font-size: 0.85rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+
+/* 2. PAGE HERO */
+.page-hero .flex-container {
+  justify-content: space-between;
+  align-items: center;
+}
+.page-hero {
+  padding: 30px 0;
+  background-image: linear-gradient(
+      to top,
+      #120e1c 64%,
+      #100c1a 70%,
+      rgba(7, 3, 18, 0) 100%
+    ),
+    url(../img/header-bg.png);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.page-hero-content {
+  padding: 70px 0;
+  text-align: center;
+}
+
+.hero-title {
+  font-size: 4.3rem;
+  line-height: 1;
+}
+.hero-subtitle {
+  margin-top: 45px;
+  color: #ffffff;
+  font-size: 1.125rem;
+  font-weight: 300;
+}
+
+.page-logo {
+  height: 120px;
+  width: 120px;
+  text-indent: -9999px;
+  background: url(../img/logo.png) center center no-repeat;
+  background-size: contain;
+}
+
+/* 3.  NAV  */
+
+.page-nav {
+  position: relative;
+}
+
+.bars {
+  width: 60px;
+  height: 60px;
+  background-color: #070312;
+  position: relative;
+  border-radius: 5px;
+}
+.bars-line {
+  width: 30px;
+  height: 4px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #fff;
+  border-radius: 4px;
+}
+.bars-line::after,
+.bars-line::before {
+  content: '';
+  position: absolute;
+  right: 0;
+  height: 100%;
+  border-radius: 4px;
+}
+.bars-line::before {
+  width: 100%;
+  background-color: #fff;
+  top: -10px;
+}
+.bars-line::after {
+  width: 66%;
+  background-color: #3067cd;
+  bottom: -10px;
+}
+.navbar-nav {
+  display: none;
+  position: absolute;
+  top: 100%;
+  right: 0;
+  list-style: none;
+  background-color: #3067cd;
+}
+.active {
+  display: block;
+}
+.nav-item a {
+  display: block;
+  font-size: 0.75rem;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+.nav-item > a {
+  color: #ffffff;
+  padding: 20px 30px 15px;
+  min-width: 180px;
+}
+.nav-item:first-child > a {
+  padding-top: 25px;
+}
+.nav-item:last-child a {
+  padding-bottom: 25px;
+}
+.dropdown-toggler {
+  position: relative;
+}
+.dropdown-toggler a {
+  background-image: url(../img/Szczalka.png);
+  background-position: right 25px center;
+  background-repeat: no-repeat;
+  background-size: 5px;
+}
+.dropdown-toggler:hover .dropdown-menu {
+  display: block;
+}
+.dropdown-menu {
+  background-color: #fff;
+  display: none;
+}
+.dropdown-menu > a {
+  padding: 25px 30px 15px;
+  color: #1e1929;
+}
+.dropdown-menu > a:last-child {
+  padding: 15px 30px 30px;
+}
+
+.bar-contact a {
+  margin: 0 10px;
+}
+/* 4. HEADINGS */
+
+.heading {
+  color: #ffffff;
+  font-family: Oswald;
+  font-weight: 700;
+  line-height: 90px;
+  text-transform: uppercase;
+}
+.heading-1 {
+  font-size: 2.25rem;
+}
+.heading-2 {
+  font-size: 1.5rem;
+}
+/* 5. TEXT COLORS */
+.text-blue {
+  color: #3067cd;
+}
+.text-white {
+  color: #fff;
+}
+.free-catalog {
+  margin: 0 20px;
+}
+
+
+/* 6. ICONS */
+
+.icon {
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: left center;
+}
+.icon-phone-violet {
+  background-image: url(../img/icon/icon-phone-violet.png);
+  padding-left: 20px;
+}
+.icon-mail-violet {
+  background-image: url(../img/icon/icon-mail-violet.png);
+  padding-left: 30px;
+}
+.social-icon {
+  display: inline-block;
+  width: 15px;
+  height: 15px;
+  text-indent: -99999px;
+}
+.icon-fb-white {
+  background-image: url(../img/icon/icon-fb-white.svg);
+}
+.icon-twitter-white {
+  background-image: url(../img/icon/icon-twitter-white.svg);
+}
+.icon-in-white {
+  background-image: url(../img/icon/icon-in-white.svg);
+}
+.icon-google-white {
+  background-image: url(../img/icon/icon-g+-white.svg);
+}
+
+
+@media screen and (min-width:700px){
+  .bars{
+      display: none;
+  }
+  .navbar-nav{
+      display: flex;
+      position: initial;
+  }
+  .nav-item>a {
+      white-space: nowrap;
+      min-width: initial;
+      padding: 24px 30px;
+  }
+  .nav-item:first-child >a {
+      padding-left: 37px;
+  }
+  .nav-item:last-child >a{
+      padding-right: 37px;
+      padding-left: 25px;
+  }
+  .dropdown-toggler a{
+      background-position: right center;
+  }
+  .dropdown-menu{
+      position: absolute;
+      top:100%;
+      left:0;
+      
+  }
+  .dropdown-menu a:first-child{
+      padding-top: 20px;
+      padding-bottom: 10px;
+  }
+  .dropdown-menu a:last-child{
+      padding-top: 10px;
+      padding-bottom: 20px;
+  }
