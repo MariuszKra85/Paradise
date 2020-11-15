@@ -48,6 +48,7 @@ iframe {
 }
 
 .center-wrapper {
+  width: 100vw;
   max-width: 1360px;
   padding: 0 30px;
   margin: 0 auto;
@@ -557,6 +558,12 @@ iframe {
           align-items: center;
   min-height: 120px;
   background-color: #1e1929;
+}
+
+.bar-justify {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .copyright {
