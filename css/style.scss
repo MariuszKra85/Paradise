@@ -798,6 +798,13 @@ input[type="checkbox"]:checked + label .checkbox-styled::after {
   height: 100%;
 }
 
+#map {
+  height: 400px;
+  /* The height is 400 pixels */
+  width: 100%;
+  /* The width is the width of the web page */
+}
+
 @media screen and (min-width: 420px) {
   .hero-title {
     font-size: 3.3rem;

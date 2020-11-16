@@ -10,6 +10,11 @@
     />
 
     <script
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDMMWNkKRxVmtYRt_mGsQfSK2F01msqBFQ&callback=initMap&libraries=&v=weekly"
+      defer
+    ></script>
+
+    <script
       src="https://kit.fontawesome.com/e30232a414.js"
       crossorigin="anonymous"
     ></script>
@@ -79,8 +84,8 @@
             <div class="text contact-info">
               <strong class="text-white">Paradise Island</strong>
               <p>
-                elm street 30 <br />
-                wf6-1am
+                Elm Street 30 <br />
+                WF6-1AM
               </p>
 
               <p>
@@ -111,7 +116,7 @@
                     <td>8:00 - 16:00</td>
                   </tr>
                   <tr>
-                    <td></td>
+                    <td>Thursday</td>
                     <td>8:00 - 16:00</td>
                   </tr>
                   <tr>
@@ -127,7 +132,285 @@
             </div>
           </div>
         </section>
+        <section class="info-section contact-form-section" id="contact-form">
+          <h4 class="heading heading-2">Contact Form</h4>
+          <div class="form-wrapper">
+            <form class="contact-form" novalidate>
+              <div class="form-field-wrapper">
+                <div class="form-field flex-container">
+                  <label for="contactform[name]" class="form-label required"
+                    >Name and Surname:</label
+                  >
+                  <input
+                    type="text"
+                    name="contactform[name]"
+                    id="contactform[name]"
+                    class="form-control"
+                  />
+                </div>
+                <div class="error-wrapper"></div>
+              </div>
+              <!-- -- -->
+              <div class="form-field-wrapper">
+                <div class="form-field flex-container">
+                  <label for="contactform[email]" class="form-label required"
+                    >E-mail:</label
+                  >
+                  <input
+                    type="email"
+                    name="contactform[email]"
+                    id="contactform[email]"
+                    class="form-control"
+                  />
+                </div>
+                <div class="error-wrapper"></div>
+              </div>
+              <!-- -- -->
+              <div class="form-field-wrapper">
+                <div class="form-field flex-container">
+                  <label for="contactform[phone]" class="form-label"
+                    >Phone:</label
+                  >
+                  <input
+                    type="tel"
+                    name="contactform[phone]"
+                    id="contactform[phone]"
+                    class="form-control"
+                  />
+                </div>
+                <div class="error-wrapper"></div>
+              </div>
+              <!-- -- -->
+              <div class="form-field-wrapper">
+                <div class="form-field flex-container">
+                  <label for="contactform[option]" class="form-label required"
+                    >Reason for contact</label
+                  >
+                  <select
+                    name="contactform[option]"
+                    class="form-control"
+                    id="contactform[option]"
+                  >
+                    <option value="">choose</option>
+                    <option value="problems">Reservation problems</option>
+                    <option value="meeting">Make an appointment</option>
+                  </select>
+                </div>
+                <div class="error-wrapper"></div>
+              </div>
+              <!-- -- -->
+              <div class="form-field-wrapper">
+                <div class="form-field flex-container">
+                  <span class="form-label required"
+                    >Are you our customer?:</span
+                  >
+                  <div class="radio-field">
+                    <input
+                      type="radio"
+                      name="contactform[client]"
+                      id="contactform[client]-yes"
+                      value="yes"
+                    />
+                    <label
+                      for="contactform[client]-yes"
+                      class="light-label text-uppercase"
+                    >
+                      <span class="radio-styled"></span>
+                      YES
+                    </label>
+                    <input
+                      type="radio"
+                      name="contactform[client]"
+                      id="contactform[client]-no"
+                      value="no"
+                    />
+                    <label
+                      for="contactform[client]-no"
+                      class="light-label text-uppercase"
+                    >
+                      <span class="radio-styled"></span>
+                      NO
+                    </label>
+                  </div>
+                </div>
+                <div class="error-wrapper"></div>
+              </div>
+              <!-- -- -->
+              <!-- -- -->
+              <div class="form-field-wrapper contact-day-field">
+                <div class="form-field flex-container">
+                  <span class="form-label required"
+                    >Preferred contact day:</span
+                  >
+                  <div class="grid-container contact-day-wrapper">
+                    <div class="grid-item">
+                      <input
+                        type="checkbox"
+                        name="contactform[contactday][]"
+                        data-group="group"
+                        id="monday"
+                      />
+                      <label for="monday" class="light-label">
+                        <span class="checkbox-styled"></span>
+                        Monday
+                      </label>
+                    </div>
+                    <div class="grid-item">
+                      <input
+                        type="checkbox"
+                        name="contactform[contactday][]"
+                        data-group="group"
+                        id="tuesday"
+                      />
+                      <label for="tuesday" class="light-label">
+                        <span class="checkbox-styled"></span>
+                        Tuesday
+                      </label>
+                    </div>
+                    <div class="grid-item">
+                      <input
+                        type="checkbox"
+                        name="contactform[contactday][]"
+                        data-group="group"
+                        id="wednesday"
+                      />
+                      <label for="wednesday" class="light-label">
+                        <span class="checkbox-styled"></span>
+                        Wednesday
+                      </label>
+                    </div>
+                    <div class="grid-item">
+                      <input
+                        type="checkbox"
+                        name="contactform[contactday][]"
+                        data-group="group"
+                        id="thursday"
+                      />
+                      <label for="thursday" class="light-label">
+                        <span class="checkbox-styled"></span>
+                        Thursday
+                      </label>
+                    </div>
+                    <div class="grid-item">
+                      <input
+                        type="checkbox"
+                        name="contactform[contactday][]"
+                        data-group="group"
+                        id="friday"
+                      />
+                      <label for="friday" class="light-label">
+                        <span class="checkbox-styled"></span>
+                        Friday
+                      </label>
+                    </div>
+                    <div class="grid-item">
+                      <input
+                        type="checkbox"
+                        name="contactform[contactday][]"
+                        data-group="group"
+                        id="saturday"
+                      />
+                      <label for="saturday" class="light-label">
+                        <span class="checkbox-styled"></span>
+                        Saturday
+                      </label>
+                    </div>
+                  </div>
+                </div>
+                <div class="error-wrapper"></div>
+              </div>
+              <div class="form-field-wrapper textarea-field">
+                <div class="form-field flex-container">
+                  <label for="contactform[message]" class="form-label required"
+                    >Message</label
+                  >
+                  <textarea
+                    name="contactform[message]"
+                    id="contactform[message]"
+                    class="form-control area-control"
+                  ></textarea>
+                </div>
+                <div class="error-wrapper"></div>
+              </div>
+              <div class="form-field-wrapper approval-field">
+                <div class="form-field flex-container">
+                  <input
+                    type="checkbox"
+                    name="contactform[approval]"
+                    id="contactform[approval]"
+                  />
+                  <label for="contactform[approval]" class="light-label">
+                    <span class="checkbox-styled"></span>
+                    I agree with the website regulations
+                  </label>
+                </div>
+                <div class="error-wrapper"></div>
+              </div>
+              <div class="btn-group">
+                <button class="btn btn-outline">Send</button>
+                <button class="btn btn-outline">Send</button>
+              </div>
+            </form>
+          </div>
+        </section>
+        <section class="info-section map-section" id="way-to-us">
+          <h4 class="heading heading-2">Way to us</h4>
+          <div class="negative-margin">
+            <div class="map-wrapper" id="map"></div>
+          </div>
+        </section>
       </article>
     </main>
+    <footer class="page-footer">
+      <div class="center-wrapper">
+        <div class="flex-container footer-content">
+          <div class="col">
+            <p class="text-heading">About Us</p>
+
+            <div class="text-footer">
+              <a href="#">who we Are</a>
+              <a href="#">History</a>
+            </div>
+          </div>
+          <div class="col">
+            <p class="text-heading">destination</p>
+
+            <div class="text-footer">
+              <a href="./product.html#china">china</a>
+              <a href="./product.html#croatia">croatia</a>
+            </div>
+          </div>
+          <div class="col">
+            <p class="text-heading">For Traveler</p>
+
+            <div class="text-footer">
+              <a href="#">How to Order</a>
+              <a href="#">shop rules</a>
+              <a href="#">Cancellation</a>
+            </div>
+          </div>
+          <div class="col social-icons-wrapper">
+            <p class="text-heading">Social media</p>
+
+            <div class="icon-group">
+              <a href="#" class="icon social-icon icon-fb-white">Facebook</a>
+              <a href="#" class="icon social-icon icon-twitter-white"
+                >Twitter</a
+              >
+              <a href="#" class="icon social-icon icon-in-white">Linkedin</a>
+              <a href="#" class="icon social-icon icon-google-white">G+</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="page-footer-bar">
+        <div class="flex-container column bar-justify">
+          <a href="#" class="page-logo">Paradise Island</a>
+          <p class="copyright">Copyright &copy; 2020</p>
+        </div>
+      </div>
+    </footer>
+    <script src="./js/map.js"></script>
   </body>
 </html>
