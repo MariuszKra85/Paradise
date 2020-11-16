@@ -840,6 +840,7 @@ input[type="checkbox"]:checked + label .checkbox-styled::after {
       ),
       url(../img/header-bg.png), url(../img/header-bg.png);
   }
+
   .page-hero-content {
     padding: 140px 0 170px;
   }
@@ -903,5 +904,17 @@ input[type="checkbox"]:checked + label .checkbox-styled::after {
   .card-img-wrapper {
     width: 100%;
     height: 120px;
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  .page-hero {
+    background-image: linear-gradient(
+        to top,
+        #120e1c 10%,
+        #100c1a 15%,
+        rgba(7, 3, 18, 0) 50%
+      ),
+      url(../img/header-bg.png);
   }
 }

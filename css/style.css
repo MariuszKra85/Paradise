@@ -1067,4 +1067,11 @@ input[type="checkbox"]:checked + label .checkbox-styled::after {
     height: 120px;
   }
 }
+
+@media screen and (min-width: 1000px) {
+  .page-hero {
+    background-image: -webkit-gradient(linear, left bottom, left top, color-stop(10%, #120e1c), color-stop(15%, #100c1a), color-stop(50%, rgba(7, 3, 18, 0))), url(../img/header-bg.png);
+    background-image: linear-gradient(to top, #120e1c 10%, #100c1a 15%, rgba(7, 3, 18, 0) 50%), url(../img/header-bg.png);
+  }
+}
 /*# sourceMappingURL=style.css.map */
